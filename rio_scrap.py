@@ -20,7 +20,7 @@ num = 0
 URL = 'https://raider.io/mythic-plus-rankings/season-bfa-4/all/world/leaderboards/%s#content'
 df = None
 #
-for num in range(5):
+for num in range(50):
     print('Fetching Page... ' + (URL % num))
     page = requests.get(URL % num)    
     soup = BeautifulSoup(page.text, 'html.parser')
